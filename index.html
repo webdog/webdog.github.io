@@ -1,1 +1,30 @@
-<b>Test</b>
+<HTML>
+<HEAD>
+<TITLE>GH Pages Page</TITLE>
+</HEAD>
+<BODY>
+
+	<script src="src/gitgraph.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="src/gitgraph.css">
+	<canvas id="gitGraph">
+	var gitgraph = new GitGraph({
+	template: "blackarrow",
+	orientation: "horizontal",
+	mode: "compact"
+	});
+	
+	var master = gitgraph.branch("master");
+	gitgraph.commit().commit.().commit()
+	var develop = gitgraph.branch("develop")
+	var myfeature = develop.branch("myfeature")
+
+	var hotfix = gitgraph.branch({
+	parentBranch: develop,
+	name: "hotfix",
+	column: 2
+	});
+
+	</canvas>
+
+</BODY>
+</HTML>
