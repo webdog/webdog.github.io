@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<link rel="stylesheet" type="text/css" href="src/gitgraph.css" />
+<TITLE>GH Pages Page</TITLE>
+</HEAD>
+<BODY>
+	<center>
+		<b>Scenario 5:</b><i>Developer D's source Object will go to PROD in 2 weeks but Developer A will start working on it.</i>
+	</center>
+	<p>
+	In this scenario, master will not be updated for two weeks, as master is always viewed as PROD. In this case<br>
+	git can alleviate this pain by the following.
+	<ul>
+		<li>Developer A and D communicate that D's code will not ship to master</li>
+		<li>Developer A will then create a working branch with Developer D's branch acting as the parent branch</li>
+		<li>Once complete, Developer A will merge their code into Developer D's branch.
+		<li>Once ready for delivery, Developer D will merge back into master for PROD delivery.</li>
+	</ul>
+	<canvas id="scenario-5">
+	<script type="text/javascript" src="src/gitgraph.js"></script>
+	<script type="text/javascript" src="example5.js"></script>
+</BODY>
+</HTML>

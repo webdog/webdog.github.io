@@ -1,0 +1,21 @@
+<HTML>
+<HEAD>
+<link rel="stylesheet" type="text/css" href="src/gitgraph.css" />
+<TITLE>GH Pages Page</TITLE>
+</HEAD>
+<BODY>
+	<center><b>Scenario 1: <i>Developer A starts developing an Object and nobody else is developing it until it is deployed to PROD</i></b></center>
+	<br>
+	<p>
+	<center>
+	In Git, this is a straightforward scenario. Developer A would open a branch against master, work on the object in their branch by making commits.<br>
+	Branch would be pushed upstream to GitHub, and Developer A would open a Pull Request for review or automated builds. Merging would push the code into master
+	</p>
+	</center>
+	<center>
+		<canvas id="scenario-1">
+	</center>
+	<script type="text/javascript" src="src/gitgraph.js"></script>;
+	<script type="text/javascript" src="example.js"></script>
+</BODY>
+</HTML>
