@@ -6,9 +6,19 @@
 <BODY>
         <script type="text/javascript" src="src/gitgraph.js"></script>
 	<b>Scenario 5:</b><br>
-	<b>Resolution</b>
                         <canvas id="resolution"></canvas>
-                        <script type="text/javascript" src="example5_solution.js"></script>
+			<script type="text/javascript" src="example5_solution.js"></script>
+	<H3>Resolution</H3><br>
+	<p>
+	In this scenario, master will not be updated for two weeks, as master is always viewed as PROD. In this case<br>
+	git can alleviate this pain by the following.
+	<ul>
+		<li>Developer A and D communicate that D's code will not ship to master for two weeks</li>
+		<li>Developer A will then create a working branch with Developer D's branch acting as the parent branch</li>
+		<li>Once complete, Developer A will merge their code into Developer D's branch.
+		<li>Once ready for delivery, Developer D will merge back into master for PROD delivery.</li>
+	</ul>
+	</p>
 </BODY>
 </HTML>
 

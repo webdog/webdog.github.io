@@ -29,7 +29,7 @@ var myTemplate_solution = new GitGraph.Template( myTemplateConfig_solution);
 var gitgraph5_solution = new GitGraph({
         elementId: "resolution",
         template: myTemplate_solution,
-        orientation: "horizontal",
+        orientation: "vertical",
         mode: "compact"
         }); 
 
