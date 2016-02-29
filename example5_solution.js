@@ -1,4 +1,4 @@
-var myTemplateConfig = { 
+var myTemplateConfig_solution = { 
   colors: [ "#F00", "#0F0", "#0FF" ], // branches colors, 1 per column                                                  
   
   branch: { 
@@ -25,33 +25,35 @@ var myTemplateConfig = {
     }     
   }
 };
-var myTemplate = new GitGraph.Template( myTemplateConfig);
-var gitgraph5 = new GitGraph({
-        elementId: "scenario-5",
-        template: myTemplate,
+var myTemplate_solution = new GitGraph.Template( myTemplateConfig_solution);
+var gitgraph5_solution = new GitGraph({
+        elementId: "resolution",
+        template: myTemplate_solution,
         orientation: "horizontal",
         mode: "compact"
         }); 
 
-        var master5 = gitgraph5.branch({
+        var master5_solution = gitgraph5_solution.branch({
                 name: "master",
                 column: 1
                 }); 
-        master5.commit("Our master branch");
+        master5_solution.commit("Our master branch");
         
-	var dev_d = gitgraph5.branch({
-                parentBranch: master5,
+	var dev_d_solution = gitgraph5_solution.branch({
+                parentBranch: master5_solution,
                 name: "dev_d",
                 column: 2
                 }); 
 
-        var dev_a = gitgraph5.branch({
-                parentBranch: dev_d,
+        var dev_a_solution = gitgraph5_solution.branch({
+                parentBranch: dev_d_solution,
                 name: "dev_a",
                 column: 3
                 }); 
-        master5.checkout();
-	dev_d.commit("Developer A checks out master and makes a commit against his branch").commit("And another commit").commit("Another one");
-       	dev_a.commit("Dev D makes a commit.").commit("And another");
-	dev_a.commit("Test");
+        master5_solution.checkout();
+	dev_d_solution.commit("Developer A checks out master and makes a commit against his branch").commit("And another commit").commit("Another one");
+       	dev_a_solution.commit("Dev D makes a commit.").commit("And another");
+	dev_a_solution.commit();
+	dev_a_solution.merge(dev_d_solution);
+	dev_d_solution.merge(master5_solution);
 	
