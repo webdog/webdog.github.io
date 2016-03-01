@@ -32,7 +32,7 @@ var myTemplateConfig = {
 var myTemplate = new GitGraph.Template( myTemplateConfig);
 var gitgraph5 = new GitGraph({
         elementId: "scenario-5",
-        template: myTemplate,
+        template: "blackarrow",
         orientation: "vertical",
         mode: "compact"
         }); 
