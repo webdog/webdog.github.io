@@ -13,12 +13,9 @@ var myTemplateConfig_solution = {
     spacingY: -80,
     dot: {   
       size: 18
-    },        
-    
-  arrowDisplay: {
-			active: True,
-		}
-    
+    }
+    template: "blackarrow",    
+      
     message: {         
       displayAuthor: true,
       displayBranch: true,
