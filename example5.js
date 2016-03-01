@@ -35,7 +35,7 @@ var gitgraph5 = new GitGraph({
 
         var master5 = gitgraph5.branch({
                 name: "master",
-                column: 1
+                column: 1 
                 }); 
         master5.commit("Our master branch");
         
