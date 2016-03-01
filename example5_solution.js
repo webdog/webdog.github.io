@@ -14,7 +14,6 @@ var myTemplateConfig_solution = {
     dot: {   
       size: 18
     }
-    template: "blackarrow",    
       
     message: {         
       displayAuthor: true,
