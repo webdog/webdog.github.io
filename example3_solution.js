@@ -30,7 +30,7 @@ var myTemplate = new GitGraph.Template( myTemplateConfig);
 
 var gitgraph3 = new GitGraph({
         elementId: "scenario-3",
-        template: "blackarrow,
+        template:  "blackarrow",
         orientation: "vertical",
         mode: "compact"
         }); 
@@ -60,5 +60,7 @@ var gitgraph3 = new GitGraph({
         dev_a.commit("Developer A checks out master and makes a commit against his branch").commit("And another commit").commit("Another one");
 	master3.commit("Developer B opens a branch at this point");
         dev_b.commit("Developer B makes a commit against his branch").commit("And another").commit("This one is merged");
-	dev_b.merge(master3);
+	dev_b.merge(master3).checkout();
+	master3.checkout();
+	dev_a.commit("Developer A makes another change, run git fetch to update the branch after Dev B's merger to PROD");
 

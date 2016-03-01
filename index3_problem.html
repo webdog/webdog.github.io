@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<link rel="stylesheet" type="text/css" href="src/gitgraph.css" />
+<TITLE>GH Pages Page</TITLE>
+</HEAD>
+<BODY>
+	<script type="text/javascript" src="src/gitgraph.js"></script>
+	<b>Scenario 3:</b><i>Developer A and Developer B are both developing the same source Object but Developer B will go to PROD before Developer A.</i><br>
+	<p>
+		This scenario can be effectively managed in git by Developer A running through the following steps:
+	<ul>
+		<li>Developer A communicates with Developer B about Developer B's merge into master</li>
+		<li>Developer A switches out of local working branch into local master</li>
+		<li>Developer A runs <b>git fetch</b> to review the changes upstream from master, and <b>git merge</b> to update the local master.</li>
+		<li>Developer A switches back to local working branch</li>
+		<li>Developer A runs <b>git merge master 'working_branch'</b> to incorporate the changes from master into the working branchh</li>
+
+		<div>
+			<canvas id="scenario-4"></canvas>
+			<script type="text/javascript" src="example4.js"></script>
+		</div>
+</BODY>
+</HTML>
