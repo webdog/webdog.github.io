@@ -68,6 +68,5 @@ var gitgraph4 = new GitGraph({
         dev_b.commit("Developer B makes a commit against his branch").commit("And another").commit("This one is merged");
 	master4.commit("Developer C opens a branch against the same master");
 	dev_c.commit("Developer C makes a commit.").commit("And another").commit("And this one gets merged");
-	dev_a.commit("Developer A makes another change, run git fetch to update the branch after Dev B's merger to PROD");
 	dev_c.merge(master4);
 
