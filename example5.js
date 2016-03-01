@@ -24,10 +24,6 @@ var myTemplateConfig = {
       return "" + commit.sha1 + "" + ": " + commit.message;    
     }     
   }
-   arrow: {
-        size: 8,
-        offset: 3
-    }
 };
 var myTemplate = new GitGraph.Template( myTemplateConfig);
 var gitgraph5 = new GitGraph({
