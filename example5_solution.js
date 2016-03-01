@@ -14,6 +14,11 @@ var myTemplateConfig_solution = {
     dot: {   
       size: 18
     },        
+    
+  arrowDisplay: {
+			active: True,
+		}
+    
     message: {         
       displayAuthor: true,
       displayBranch: true,
