@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<link rel="stylesheet" type="text/css" href="src/gitgraph.css" />
+<TITLE>GH Pages Page</TITLE>
+</HEAD>
+<BODY>
+        <script type="text/javascript" src="src/gitgraph.js"></script>
+	<b>Scenario 5: Resolution</b>
+	<br>
+	<br>
+                        <canvas id="resolution"></canvas>
+			<script type="text/javascript" src="example4_solution.js"></script>
+	<H3>Resolution Steps</H3><br>
+	In this scenario, we have three developers working off of working branches based on a common master.<br>
+	Developer C has had a more pressing change to push to PROD. Git makes this manageable through the following steps<br>
+	<p>
+	<ul>
+		<li>Developer C communicates the changes to the group</li>
+		<li>Developer A and B continue to work on their branches until they are ready to pull changes down from the updated master</li>
+		<li>Developer A and B both run <b>git fetch</b> and <b>git merge</b> on their local master branches to update Developer C's changes</li>
+		<li>Developer A and B both run <b>git merge master 'working_branch'</b> inside their working branch to incorporate the updated master's changes into their working branch</li>
+		<li>Developer A and B are both up-to-date with Developer C's changes</li>
+		<li>Developer A and B communicate with each other and use the workflow strategy from Scenario 2 to merge their branches</li>
+	</ul>
+	</p>
+</BODY>
+</HTML>
+

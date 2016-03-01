@@ -28,8 +28,8 @@ var myTemplateConfig = {
 var myTemplate = new GitGraph.Template( myTemplateConfig);
 var gitgraph4 = new GitGraph({
         elementId: "scenario-4",
-        template: myTemplate,
-        orientation: "horizontal",
+        template: "blackarrow",,
+        orientation: "vertical",
         mode: "compact"
         }); 
 
@@ -38,9 +38,6 @@ var gitgraph4 = new GitGraph({
                 column: 1
                 }); 
         master4.commit("Our master branch");
-        //master4.commit("Developer opens a branch at this point")    
-        //master4.checkout();
-	//master4.checkout();
         var dev_a = gitgraph4.branch({
                 parentBranch: master4,
                 name: "dev_a",
@@ -67,5 +64,5 @@ var gitgraph4 = new GitGraph({
 	master4.commit("Developer C opens a branch against the same master");
 	dev_c.commit("Developer C makes a commit.").commit("And another").commit("And this one gets merged");
 	dev_a.commit("Developer A makes another change, run git fetch to update the branch after Dev B's merger to PROD");
-	//dev_c.merge(master4);
+	dev_c.merge(master4);
 
