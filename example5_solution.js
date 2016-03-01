@@ -36,20 +36,23 @@ var gitgraph5_solution = new GitGraph({
 
         var master5_solution = gitgraph5_solution.branch({
                 name: "master",
-                column: 1
+                column: 1,
+	    	showLabel: true
                 }); 
         master5_solution.commit("Our master branch");
         
 	var dev_d_solution = gitgraph5_solution.branch({
                 parentBranch: master5_solution,
                 name: "dev_d",
-                column: 2
+                column: 2,
+	    	showLabel: true
                 }); 
 
         var dev_a_solution = gitgraph5_solution.branch({
                 parentBranch: dev_d_solution,
                 name: "dev_a",
-                column: 3
+                column: 3,
+	    	showLabel: true
                 }); 
         master5_solution.checkout();
 	dev_d_solution.commit("Developer A checks out master and makes a commit against his branch").commit("And another commit").commit("Another one");
