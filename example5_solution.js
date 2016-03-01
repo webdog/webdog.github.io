@@ -14,6 +14,7 @@ var myTemplateConfig_solution = {
     dot: {   
       size: 18
     }
+   }
       
     message: {         
       displayAuthor: true,
