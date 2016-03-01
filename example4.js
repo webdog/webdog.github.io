@@ -28,36 +28,38 @@ var myTemplateConfig = {
 var myTemplate = new GitGraph.Template( myTemplateConfig);
 var gitgraph4 = new GitGraph({
         elementId: "scenario-4",
-        template: myTemplate,
+        template: "blackarrow",
         orientation: "horizontal",
         mode: "compact"
         }); 
 
         var master4 = gitgraph4.branch({
                 name: "master",
-                column: 1
+                column: 1,
+	    	showLabel: true
                 }); 
         master4.commit("Our master branch");
-        //master4.commit("Developer opens a branch at this point")    
-        //master4.checkout();
-	//master4.checkout();
-        var dev_a = gitgraph4.branch({
+        
+	var dev_a = gitgraph4.branch({
                 parentBranch: master4,
                 name: "dev_a",
-                column: 4
+                column: 4,
+	    	showLabel: true
                 }); 
 
         var dev_b = gitgraph4.branch({
                 parentBranch: master4,
                 name: "dev_b",
-                column: 3
+                column: 3,
+		showLabel: true
                 }); 
         
 	
 	var dev_c = gitgraph4.branch({
 		parentBranch: master4,
 	    	name: "dev_c",
-	    	column: 2
+	    	column: 2,
+		showLabel: true
 		});
 
 	master4.checkout();
