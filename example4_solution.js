@@ -35,7 +35,8 @@ var gitgraph4 = new GitGraph({
 
         var master4 = gitgraph4.branch({
                 name: "master",
-                column: 1
+                column: 1,
+	    	showLabel: true
                 }); 
         master4.commit("Our master branch");
         var dev_a = gitgraph4.branch({
