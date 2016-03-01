@@ -25,7 +25,6 @@ var myTemplateConfig_solution = {
     tooltipHTMLFormatter: function ( commit ) {     
       return "" + commit.sha1 + "" + ": " + commit.message;    
     }     
-  }
 };
 var myTemplate_solution = new GitGraph.Template( myTemplateConfig_solution);
 var gitgraph5_solution = new GitGraph({
