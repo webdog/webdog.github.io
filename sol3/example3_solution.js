@@ -62,4 +62,5 @@ var gitgraph3 = new GitGraph({
         dev_b.commit("Developer B makes a commit against his branch").commit("And another").commit("This one is merged");
 	dev_b.merge(master3);
 	dev_a.checkout(master3);
+	dev_a.commit();
 	dev_a.merge(master3);
