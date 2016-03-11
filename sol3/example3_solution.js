@@ -61,5 +61,7 @@ var gitgraph3 = new GitGraph({
 	master3.commit("Developer B opens a branch at this point");
         dev_b.commit("Developer B makes a commit against his branch").commit("And another").commit("This one is merged");
 	dev_b.merge(master3);
-	master3.commit();
+	dev_a.merge(master3);
+	master3.checkout();
+	dev_a.commit("Developer A has fetched the changes from upstream at this point");
 	dev_a.merge(master3);
