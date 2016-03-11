@@ -64,5 +64,5 @@ var gitgraph3 = new GitGraph({
 	master3.checkout();
 	dev_a.commit("Developer A makes another change, run git fetch to update the branch after Dev B's merger to PROD");
 	master3.checkout();
-	dev_a.merge(master3);
 	dev_a.commit();
+	dev_a.merge(master3);
