@@ -36,7 +36,8 @@ var gitgraph2 = new GitGraph({
 
         var master2 = gitgraph2.branch({
                 name: "master",
-                column: 3
+                column: 3,
+	    	showLabel: true
                 }); 
         master2.commit("Our master branch");
         //master2.commit("Developer opens a branch at this point")    
@@ -45,14 +46,16 @@ var gitgraph2 = new GitGraph({
         var dev_a = gitgraph2.branch({
                 parentBranch: master2,
                 name: "dev_a",
-                column: 4
+                column: 4,
+		showLabel: true
                 }); 
 
         var dev_b = gitgraph2.branch({
                 parentBranch: master2,
                 name: "dev_b",
-                column: 5
-                }); 
+                column: 5,
+                showLabel: true
+		}); 
         dev_a.commit("Developer A checks out master and makes a commit against his branch").commit("And another commit").commit("Another one");
         //dev_a.delete();
 	master2.commit("Developer B opens a branch against master. Dev A is still working in their local copy, no changes pushed upstream")
