@@ -8,7 +8,12 @@
 		The scenario as shown in Git.<br>
 		<br>
 	</center>
-	Resolution 1:
+	<center>
+		<canvas id="scenario-2">
+	</center>
+	<script type="text/javascript" src="../src/gitgraph.js"></script>;
+	<script type="text/javascript" src="example2_solution.js"></script>
+	<H3> Resolution Steps</H3>
 	<ul>
 		<li>Developer A takes the commits from his branched repository off master and commits them upstream to master</li>
 		<li>Developer B switches to their local copy of master</li>
@@ -18,11 +23,6 @@
 		<li>Developer runs <b>git merge master <working_branch> </b> -- This will integrate Dev B's working branch against the updated parent branch master</li>
 		
 	</ul>
-	
-	<center>
-		<canvas id="scenario-2">
-	</center>
-	<script type="text/javascript" src="../src/gitgraph.js"></script>;
-	<script type="text/javascript" src="example2_solution.js"></script>
+
 </BODY>
 </HTML>
