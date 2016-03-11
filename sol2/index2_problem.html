@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<link rel="stylesheet" type="text/css" href="../src/gitgraph.css" />
+<TITLE>GH Pages Page</TITLE>
+</HEAD>
+<BODY>
+	<center><b>Scenario 2: <i>Developer A starts developing an Object but Developer B already is also developing it.</i></b><br>
+		The scenario as shown in Git.<br>
+		<br>
+	</center>
+	Resolution 1:
+	<ul>
+		<li>Developer A takes the commits from his branched repository off master and commits them upstream to master</li>
+		<li>Developer B switches to their local copy of master</li>
+		<li>Developer B runs <b>git fetch</b> to bring the changes from master upstream into their local repository</li>
+		<li>Developer B runs <b>git merge</b> to merge the upstream master into local master</li>
+		<li>Developer B returns to their local working branch</li>
+		<li>Developer runs <b>git merge master <working_branch> </b> -- This will integrate Dev B's working branch against the updated parent branch master</li>
+		
+	</ul>
+	
+	<center>
+		<canvas id="scenario-2">
+	</center>
+	<script type="text/javascript" src="../src/gitgraph.js"></script>;
+	<script type="text/javascript" src="example2.js"></script>
+</BODY>
+</HTML>
