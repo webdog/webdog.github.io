@@ -1,13 +1,11 @@
 <HTML>
 <HEAD>
-<link rel="stylesheet" type="text/css" href="src/gitgraph.css" />
+<link rel="stylesheet" type="text/css" href="../src/gitgraph.css" />
 <TITLE>GH Pages Page</TITLE>
 </HEAD>
 <BODY>
 	<center><b>Scenario 2: <i>Developer A starts developing an Object but Developer B already is also developing it.</i></b><br>
 		The scenario as shown in Git.<br>
-		How are developers communicating that they are working on similar items?<br>
-		There are several ways to address this conflict.<br>
 		<br>
 	</center>
 	Resolution 1:
@@ -21,20 +19,10 @@
 		
 	</ul>
 	
-	Resolution 2:
-	<ul>
-		<li>Developer A decides to finish development on their branch</li>
-		<li>Developer A pushes their working branch upstream to GitHub</li>
-		<li>Developer A communicates this to Developer B</li>
-		<li>Developer B pulls Developer A's branch locally from GitHub</li>
-		<li>Developer B runs <b>git log</b> on Developer A's branch to see the commits Developer A made</li>
-		<li>Developer chooses the commits to merge by their SHA, and runs <b>git cherry-pick</b> to bring these changes into their working branch</li>
-	</ul>
-
 	<center>
 		<canvas id="scenario-2">
 	</center>
-	<script type="text/javascript" src="src/gitgraph.js"></script>;
+	<script type="text/javascript" src="../src/gitgraph.js"></script>;
 	<script type="text/javascript" src="example2.js"></script>
 </BODY>
 </HTML>
