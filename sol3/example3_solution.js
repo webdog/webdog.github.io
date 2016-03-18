@@ -57,7 +57,7 @@ var gitgraph3 = new GitGraph({
 	    	showLabel: true
                 }); 
         master3.checkout();
-        dev_a.commit("Developer A checks out master and makes a commit against his branch").commit("And another commit").commit("Another one");
+        //dev_a.commit("Developer A checks out master and makes a commit against his branch").commit("And another commit").commit("Another one");
 	//master3.commit("Developer B opens a branch at this point");
         dev_b.commit("Developer B makes a commit against his branch").commit("And another").commit("This one is merged");
 	dev_b.merge(master3);
