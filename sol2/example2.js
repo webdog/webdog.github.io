@@ -59,4 +59,4 @@ var gitgraph2 = new GitGraph({
         dev_a.commit("Developer A checks out master and makes a commit against his branch").commit("And another commit").commit("Another one");
 	//master2.commit("Developer B opens a branch against master. Dev A is still working in their local copy, no changes pushed upstream")
         master2.checkout();
-	dev_b.commit("Developer B makes a commit against his branch").commit("And another").commit("This one is merged");
+	dev_b.commit("Developer B makes a commit against his branch").commit("And another").commit("And another");
