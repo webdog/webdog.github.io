@@ -884,7 +884,7 @@
     this.tagColor = options.tagColor || options.color;
     this.tagFont = options.tagFont || this.template.commit.tag.font;
     this.sha1 = options.sha1 || (Math.random( 100 )).toString( 16 ).substring( 3, 10 );
-    this.message = options.message || "He doesn't like George Michael! Boooo!";
+    this.message = options.message || "A single commit";
     this.arrowDisplay = options.arrowDisplay;
     this.messageDisplay = booleanOptionOr( options.messageDisplay, this.template.commit.message.display );
     this.messageAuthorDisplay = booleanOptionOr( options.messageAuthorDisplay, this.template.commit.message.displayAuthor );
@@ -1204,7 +1204,7 @@
           },
           message: {
             color: "black",
-	    displayAuthor: true,
+	    displayAuthor: false,
 	    displayBranch: true,
 	    font: "normal 12pt Arial"
           }
