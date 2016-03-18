@@ -133,7 +133,7 @@
       this.template.commit.spacingY = 0;
       this.template.branch.spacingX = 0;
       this.orientation = "horizontal";
-      this.template.branch.labelRotation = -45;
+      this.template.branch.labelRotation = 0;
       this.template.commit.tag.spacingX = -this.template.commit.spacingX;
       this.template.commit.tag.spacingY = this.template.branch.spacingY;
       break;
