@@ -127,7 +127,7 @@
       this.template.commit.tag.spacingY *= -1;
       break;
     case "horizontal" :
-      this.template.commit.message.display = false;
+      this.template.commit.message.display = true;
       this.template.commit.spacingX = this.template.commit.spacingY;
       this.template.branch.spacingY = this.template.branch.spacingX;
       this.template.commit.spacingY = 0;
