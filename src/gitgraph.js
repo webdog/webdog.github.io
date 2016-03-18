@@ -1191,7 +1191,8 @@
           color: "#000000",
           lineWidth: 4,
           spacingX: 50,
-          mergeStyle: "straight"
+          mergeStyle: "straight",
+	  labelFont: "normal 16pt Arial"
         },
         commit: {
           spacingY: -60,
@@ -1201,7 +1202,10 @@
             strokeWidth: 7
           },
           message: {
-            color: "black"
+            color: "black",
+	    displayAuthor: true,
+	    displayBranch: true,
+	    font: "normal 12pt Arial"
           }
         },
         arrow: {
@@ -1226,7 +1230,7 @@
             size: 14
           },
           message: {
-            font: "normal 14pt Arial"
+            font: "normal 12pt Arial"
           }
         }
       };
