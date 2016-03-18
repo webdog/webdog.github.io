@@ -131,7 +131,7 @@
       this.template.commit.spacingX = this.template.commit.spacingY;
       this.template.branch.spacingY = this.template.branch.spacingX;
       this.template.commit.spacingY = 0;
-      this.template.branch.spacingX = 0;
+      this.template.branch.spacingX = 1;
       this.orientation = "horizontal";
       this.template.branch.labelRotation = 0;
       this.template.commit.tag.spacingX = -this.template.commit.spacingX;
