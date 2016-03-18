@@ -65,7 +65,7 @@ var gitgraph4 = new GitGraph({
 	master4.checkout();
         dev_a.commit("Developer A checks out master and makes a commit against his branch").commit("And another commit").commit("Another one");
 	//master4.commit("Developer B opens a branch at this point");
-        dev_b.commit("Developer B makes a commit against his branch").commit("And another").commit("This one is merged");
+        dev_b.commit("Developer B makes a commit against his branch").commit("And another").commit("And another");
 	//master4.commit("Developer C opens a branch against the same master");
 	dev_c.commit("Developer C makes a commit.").commit("And another").commit("And this one gets merged");
 	dev_c.merge(master4);
