@@ -150,7 +150,7 @@
       break;
     default:
       this.orientation = "vertical";
-      this.template.commit.message.display= = true;
+      this.template.commit.message.display = true;
       this.template.branch.labelRotation = 0;
       break;
     }
