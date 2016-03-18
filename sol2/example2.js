@@ -17,8 +17,8 @@ var myTemplateConfig = {
     message: {      
       displayAuthor: true,
       displayBranch: true,
-      displayHash: false,                                                                                                      
-      font: "normal 12pt Arial"                                                                                                
+      displayHash: false                                                                                                      
+      //font: "normal 8pt Arial"                                                                                                
     },      
     tooltipHTMLFormatter: function ( commit ) {                                                                                
       return "" + commit.sha1 + "" + ": " + commit.message;                                                                    
@@ -57,7 +57,6 @@ var gitgraph2 = new GitGraph({
                 showLabel: true
 		}); 
         dev_a.commit("Developer A checks out master and makes a commit against his branch").commit("And another commit").commit("Another one");
-        //dev_a.delete();
-	master2.commit("Developer B opens a branch against master. Dev A is still working in their local copy, no changes pushed upstream")
-        dev_b.commit("Developer B makes a commit against his branch").commit("And another").commit("This one is merged");
-        //dev_b.merge(master2);
+	//master2.commit("Developer B opens a branch against master. Dev A is still working in their local copy, no changes pushed upstream")
+        master3.checkout();
+	dev_b.commit("Developer B makes a commit against his branch").commit("And another").commit("This one is merged");
