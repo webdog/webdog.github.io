@@ -63,6 +63,6 @@ var gitgraph3 = new GitGraph({
 	dev_b.merge(master3);
 	dev_a.commit("Developer A fetches the changes after the merge at this point");
 	//dev_a.merge(master3.commit);
-	//master3.checkout();
+	master3.checkout();
 	dev_a.commit("\n Developer A has fetched the changes, and merges their changes back into master");
 	dev_a.merge(master3);
